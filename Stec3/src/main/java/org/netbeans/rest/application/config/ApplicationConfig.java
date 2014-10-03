@@ -30,6 +30,7 @@ public class ApplicationConfig extends Application {
      */
     private void addRestResourceClasses(Set<Class<?>> resources) {
         resources.add(com.cisco.hackit5.demo.stec3.HelloWorld.class);
+        resources.add(com.cisco.hackit5.demo.stec3.Threats.class);
     }
     
 }

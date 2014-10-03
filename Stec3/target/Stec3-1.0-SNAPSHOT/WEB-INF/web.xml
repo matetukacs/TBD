@@ -15,7 +15,7 @@
   <servlet-mapping>
     <servlet-name>Test JAX-RS REST Servlet</servlet-name>
     <url-pattern>/services/*</url-pattern>
-  </servlet-mapping>
+  </servlet-mapping> 
   <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>
   </welcome-file-list>
