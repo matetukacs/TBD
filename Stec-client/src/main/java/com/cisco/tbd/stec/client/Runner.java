@@ -44,7 +44,7 @@ public class Runner {
         
         
         
-        RuleRequester.runWithFrequency(5000);
+        RuleRequester.runWithFrequency(30000);
         
         String filePath = "/var/log/snort/mylog.txt";
         
@@ -59,15 +59,17 @@ public class Runner {
             int currentLineCount = FileUtils.getFileLineCount(filePath);
             
             if (currentLineCount != lastLineCount) {
-                
-                LogEntry logEntry = LogUtils.getAttackData(FileUtils.getLastLineOfFile(filePath));
-                
-                if (logEntry instanceof AttackLogEntry) {
-                    ServerConnection.pushDetectedThreat((AttackLogEntry)logEntry);
+                String lastLine = FileUtils.getLastLineOfFile(filePath);
+                if (lastLine.contains("/n")) {
+                    LogEntry logEntry = LogUtils.getAttackData(lastLine);
                     System.out.println(logEntry.toString());
+                    if (logEntry instanceof AttackLogEntry) {
+                        ServerConnection.pushDetectedThreat((AttackLogEntry)logEntry);
+                        System.out.println(logEntry.toString());
+                    }
+
+                    lastLineCount = currentLineCount;
                 }
-                
-                lastLineCount = currentLineCount;
             }
             
            

@@ -45,7 +45,7 @@ public class ServerConnection {
 
         method.addParameter("ip", logEntry.getAttackIp());
 
-        method.addParameter("descr", logEntry.getDescr());
+        method.addParameter("descr", logEntry.toString());
 
         method.addParameter("type", "dos");
 
