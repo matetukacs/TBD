@@ -12,6 +12,21 @@ package com.cisco.tbd.stec.client;
  */
 public class AttackData {
     
-    public String attackIp;
-    public int priorityLeve;
+    private String attackIp;
+    private int priorityLevel;
+    
+    public AttackData(String attckIp, int priorityLevel) {
+        this.attackIp = attackIp;
+        this.priorityLevel = priorityLevel;
+    }
+
+    public String getAttackIp() {
+        return attackIp;
+    }
+
+    public int getPriorityLevel() {
+        return priorityLevel;
+    }
+    
+    
 }

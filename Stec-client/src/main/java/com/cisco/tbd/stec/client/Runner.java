@@ -55,7 +55,7 @@ public class Runner {
             
             if (currentLineCount != lastLineCount) {
                 
-                System.out.println(FileUtils.getLastLineOfFile(filePath));
+                ServerConnection.p
                 
                 lastLineCount = currentLineCount;
             }

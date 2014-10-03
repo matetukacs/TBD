@@ -25,13 +25,12 @@ import org.codehaus.jettison.json.JSONObject;
  */
 public class ServerConnection {
     
-    public static void pushDetectedThreat(String attackerIpAddress, String deviceKey, int exchangeId) throws IOException, JSONException {
+    public static void pushDetectedThreat(AttackData attackData) throws IOException, JSONException {
         DefaultHttpClient client = new DefaultHttpClient();
         HttpPost post = new HttpPost("http://10.154.244.56/updatethreats");
         
         JSONObject json = new JSONObject();
-        json.put("clientIp", clientIpAddress);
-        json.put("attackerIp", attackerIpAddress);
+        json.put("attackerIp", attackData.attackIp);
         json.put("deviceKey", deviceKey);
         json.put("exchangeId", exchangeId);
         
