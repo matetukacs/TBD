@@ -18,8 +18,10 @@ import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.DefaultHttpClient;
-import org.codehaus.jettison.json.JSONException;
-import org.codehaus.jettison.json.JSONObject;
+//import org.codehaus.jettison.json.JSONException;
+//import org.codehaus.jettison.json.JSONObject;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
@@ -29,7 +31,7 @@ import org.json.simple.parser.ParseException;
  */
 public class ServerConnection {
 
-    public static void pushDetectedThreat(AttackData attackData) throws IOException, JSONException {
+    public static void pushDetectedThreat(AttackData attackData) throws IOException {
         //DefaultHttpClient client = new DefaultHttpClient();
 //        HttpPost post = new HttpPost("http://10.154.244.56/updatethreats");
 //        //Example: $res['data'] = $my_mysql_wr->insert_threats("weiuyrwerywiuery", 1, "1.2.3.4, ""this is deme", "dos", 3);
@@ -88,7 +90,7 @@ public class ServerConnection {
 
     }
 
-    public static ArrayList<String> pullNewRules(String timeStamp) throws IOException, ParseException, JSONException {
+    public static ArrayList<String> pullNewRules(String timeStamp) throws IOException, ParseException {
 
         String request = "http://10.154.244.56/stec/get_threats.php?token=weiuyrwerywiuery&exchange=1&from="+timeStamp;
 
@@ -117,23 +119,20 @@ public class ServerConnection {
 //        }
         
         JSONObject json = (JSONObject)new JSONParser().parse(br.readLine());
-        System.out.println("timestmp=" + json.get("timestamp"));
-        //System.out.println("width=" + json.get("width"));
-
+        String newTimeStamp = json.get("timestamp").toString();
+        JSONArray rules = (JSONArray) json.get("data");
+        
+        ArrayList<String> newRules = new ArrayList<>();
+        
+        for (Object object : rules) {
+            newRules.add(object.toString());
+        }
         br.close();
-//        HttpClient client = new DefaultHttpClient();
-//        HttpGet request = new HttpGet("http://10.154.244.56:8080/Stec3/services/threats/demo");
-//        HttpResponse response = client.execute(request);
-//        BufferedReader rd = new BufferedReader (new InputStreamReader(response.getEntity().getContent()));
-//        String line = "";
-//        while ((line = rd.readLine()) != null) {
-//          System.out.println(line);
-//        }
-//        
-//        if (FileUtils.removeFile("./../timestamp.txt")) {
-//            FileUtils.createFileWithText("./../timestamp.txt", timeStamp);
-//        }
+        
+        if (FileUtils.removeFile("./../timestamp.txt")) {
+            FileUtils.createFileWithText("./../timestamp.txt", newTimeStamp);
+        }
 
-        return null;
+        return newRules;
     }
 }

@@ -11,6 +11,8 @@ import java.util.Timer;
 import java.util.TimerTask;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import org.codehaus.jettison.json.JSONException;
+import org.json.simple.parser.ParseException;
 
 /**
  *
@@ -29,7 +31,15 @@ public class RuleRequester extends TimerTask {
             ServerConnection.pullNewRules("TimeStamp");
         } catch (IOException ex) {
             Logger.getLogger(RuleRequester.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (ParseException ex) {
+            Logger.getLogger(RuleRequester.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (JSONException ex) {
+            Logger.getLogger(RuleRequester.class.getName()).log(Level.SEVERE, null, ex);
         }
+    }
+    
+    public void updateLocalRulesWith(ArrayList<String> rules) {
+        //create rules in right format and append to right file. possible throgh a static method in fileutisl. there is example code as well. 
     }
 
 }
