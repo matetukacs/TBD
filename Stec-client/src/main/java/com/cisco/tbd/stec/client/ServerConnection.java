@@ -30,9 +30,9 @@ public class ServerConnection {
         HttpPost post = new HttpPost("http://10.154.244.56/updatethreats");
         
         JSONObject json = new JSONObject();
-        json.put("attackerIp", attackData.attackIp);
-        json.put("deviceKey", deviceKey);
-        json.put("exchangeId", exchangeId);
+        json.put("attackerIp", attackData.getAttackIp());
+        json.put("deviceKey", "adaskjasd");
+        json.put("exchangeId", 1);
         
         
         post.setEntity(new StringEntity(json.toString()));

@@ -55,7 +55,7 @@ public class Runner {
             
             if (currentLineCount != lastLineCount) {
                 
-                ServerConnection.p
+                ServerConnection.pushDetectedThreat(LogUtils.getAttackData(FileUtils.getLastLineOfFile(filePath)));
                 
                 lastLineCount = currentLineCount;
             }

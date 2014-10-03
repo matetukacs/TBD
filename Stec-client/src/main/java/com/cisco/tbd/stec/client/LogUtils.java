@@ -12,7 +12,7 @@ package com.cisco.tbd.stec.client;
  */
 public class LogUtils {
 
-    public AttackData getAttackData(String log) {
+    public static AttackData getAttackData(String log) {
         return null;
     }
 }
