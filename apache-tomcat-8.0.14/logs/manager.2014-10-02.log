@@ -12,3 +12,223 @@
 02-Oct-2014 19:26:58.493 INFO [http-nio-8080-exec-10] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/'
 02-Oct-2014 19:26:59.066 INFO [http-nio-8080-exec-9] org.apache.catalina.core.ApplicationContext.log Manager: install: Installing context configuration at 'file:/var/folders/mk/gs7301h56x9ftxg8_12pkzrc0000gn/T/context6440123279897566901.xml'
 02-Oct-2014 19:26:59.178 INFO [http-nio-8080-exec-1] org.apache.catalina.core.ApplicationContext.log Manager: start: Starting web application '/'
+02-Oct-2014 19:51:01.135 INFO [http-nio-8080-exec-19] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 19:51:01.174 INFO [http-nio-8080-exec-20] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 19:51:01.207 INFO [http-nio-8080-exec-11] org.apache.catalina.core.ApplicationContext.log Manager: install: Installing context configuration at 'file:/var/folders/mk/gs7301h56x9ftxg8_12pkzrc0000gn/T/context2174271043806068548.xml'
+02-Oct-2014 19:51:01.278 INFO [http-nio-8080-exec-12] org.apache.catalina.core.ApplicationContext.log Manager: start: Starting web application '/Stec3'
+02-Oct-2014 19:51:10.871 INFO [http-nio-8080-exec-12] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 19:51:10.956 INFO [http-nio-8080-exec-13] org.apache.catalina.core.ApplicationContext.log Manager: restart: Reloading web application '/Stec3'
+02-Oct-2014 19:51:18.770 INFO [http-nio-8080-exec-22] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 19:51:18.794 INFO [http-nio-8080-exec-12] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 19:51:18.813 INFO [http-nio-8080-exec-18] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/Stec3'
+02-Oct-2014 19:51:19.352 INFO [http-nio-8080-exec-20] org.apache.catalina.core.ApplicationContext.log Manager: install: Installing context configuration at 'file:/var/folders/mk/gs7301h56x9ftxg8_12pkzrc0000gn/T/context507327871373239729.xml'
+02-Oct-2014 19:51:19.388 INFO [http-nio-8080-exec-16] org.apache.catalina.core.ApplicationContext.log Manager: start: Starting web application '/Stec3'
+02-Oct-2014 19:51:36.484 INFO [http-nio-8080-exec-16] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 19:52:58.229 INFO [http-nio-8080-exec-20] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 19:52:58.254 INFO [http-nio-8080-exec-16] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 19:52:58.302 INFO [http-nio-8080-exec-27] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/Stec3'
+02-Oct-2014 19:52:58.824 INFO [http-nio-8080-exec-24] org.apache.catalina.core.ApplicationContext.log Manager: install: Installing context configuration at 'file:/var/folders/mk/gs7301h56x9ftxg8_12pkzrc0000gn/T/context7216958805965389629.xml'
+02-Oct-2014 19:52:58.863 INFO [http-nio-8080-exec-18] org.apache.catalina.core.ApplicationContext.log Manager: start: Starting web application '/Stec3'
+02-Oct-2014 19:55:01.954 INFO [http-nio-8080-exec-24] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 19:55:01.985 INFO [http-nio-8080-exec-18] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 19:55:02.003 INFO [http-nio-8080-exec-33] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/Stec3'
+02-Oct-2014 19:55:02.161 INFO [http-nio-8080-exec-31] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 19:55:02.190 INFO [http-nio-8080-exec-38] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 19:55:02.524 INFO [http-nio-8080-exec-34] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/Stec3'
+02-Oct-2014 19:55:02.536 INFO [http-nio-8080-exec-36] org.apache.catalina.core.ApplicationContext.log Manager: install: Installing context configuration at 'file:/var/folders/mk/gs7301h56x9ftxg8_12pkzrc0000gn/T/context8562178490885750392.xml'
+02-Oct-2014 19:55:02.614 INFO [http-nio-8080-exec-18] org.apache.catalina.core.ApplicationContext.log Manager: install: Installing context configuration at 'file:/var/folders/mk/gs7301h56x9ftxg8_12pkzrc0000gn/T/context3796369934899114934.xml'
+02-Oct-2014 19:55:02.627 INFO [http-nio-8080-exec-30] org.apache.catalina.core.ApplicationContext.log Manager: start: Starting web application '/Stec3'
+02-Oct-2014 19:55:10.828 INFO [http-nio-8080-exec-40] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 19:55:10.850 INFO [http-nio-8080-exec-31] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 19:55:10.866 INFO [http-nio-8080-exec-38] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/Stec3'
+02-Oct-2014 19:55:11.388 INFO [http-nio-8080-exec-39] org.apache.catalina.core.ApplicationContext.log Manager: install: Installing context configuration at 'file:/var/folders/mk/gs7301h56x9ftxg8_12pkzrc0000gn/T/context6315270210331281208.xml'
+02-Oct-2014 19:55:11.433 INFO [http-nio-8080-exec-33] org.apache.catalina.core.ApplicationContext.log Manager: start: Starting web application '/Stec3'
+02-Oct-2014 19:55:38.598 INFO [http-nio-8080-exec-36] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 19:55:38.621 INFO [http-nio-8080-exec-42] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 19:55:38.637 INFO [http-nio-8080-exec-43] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/Stec3'
+02-Oct-2014 19:55:39.159 INFO [http-nio-8080-exec-38] org.apache.catalina.core.ApplicationContext.log Manager: install: Installing context configuration at 'file:/var/folders/mk/gs7301h56x9ftxg8_12pkzrc0000gn/T/context8179695897836644516.xml'
+02-Oct-2014 19:55:39.197 INFO [http-nio-8080-exec-39] org.apache.catalina.core.ApplicationContext.log Manager: start: Starting web application '/Stec3'
+02-Oct-2014 19:56:05.524 INFO [http-nio-8080-exec-46] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 19:56:05.547 INFO [http-nio-8080-exec-47] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 19:56:05.563 INFO [http-nio-8080-exec-42] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/Stec3'
+02-Oct-2014 19:56:06.073 INFO [http-nio-8080-exec-48] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 19:56:06.085 INFO [http-nio-8080-exec-39] org.apache.catalina.core.ApplicationContext.log Manager: install: Installing context configuration at 'file:/var/folders/mk/gs7301h56x9ftxg8_12pkzrc0000gn/T/context5940892281030465450.xml'
+02-Oct-2014 19:56:06.120 INFO [http-nio-8080-exec-38] org.apache.catalina.core.ApplicationContext.log Manager: start: Starting web application '/Stec3'
+02-Oct-2014 19:56:22.334 INFO [http-nio-8080-exec-47] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 19:56:22.360 INFO [http-nio-8080-exec-50] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 19:56:22.375 INFO [http-nio-8080-exec-44] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/Stec3'
+02-Oct-2014 19:56:22.899 INFO [http-nio-8080-exec-39] org.apache.catalina.core.ApplicationContext.log Manager: install: Installing context configuration at 'file:/var/folders/mk/gs7301h56x9ftxg8_12pkzrc0000gn/T/context5728485194632816368.xml'
+02-Oct-2014 19:56:22.936 INFO [http-nio-8080-exec-42] org.apache.catalina.core.ApplicationContext.log Manager: start: Starting web application '/Stec3'
+02-Oct-2014 20:00:40.821 INFO [http-nio-8080-exec-58] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 20:00:40.890 INFO [http-nio-8080-exec-59] org.apache.catalina.core.ApplicationContext.log Manager: restart: Reloading web application '/Stec3'
+02-Oct-2014 20:00:48.550 INFO [http-nio-8080-exec-57] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 20:00:48.575 INFO [http-nio-8080-exec-52] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 20:00:48.592 INFO [http-nio-8080-exec-61] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/Stec3'
+02-Oct-2014 20:00:49.114 INFO [http-nio-8080-exec-56] org.apache.catalina.core.ApplicationContext.log Manager: install: Installing context configuration at 'file:/var/folders/mk/gs7301h56x9ftxg8_12pkzrc0000gn/T/context2890659288354916187.xml'
+02-Oct-2014 20:00:49.154 INFO [http-nio-8080-exec-58] org.apache.catalina.core.ApplicationContext.log Manager: start: Starting web application '/Stec3'
+02-Oct-2014 20:02:04.797 INFO [http-nio-8080-exec-61] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 20:02:04.902 INFO [http-nio-8080-exec-56] org.apache.catalina.core.ApplicationContext.log Manager: restart: Reloading web application '/Stec3'
+02-Oct-2014 20:02:04.971 INFO [http-nio-8080-exec-61] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 20:02:05.059 INFO [http-nio-8080-exec-66] org.apache.catalina.core.ApplicationContext.log Manager: restart: Reloading web application '/Stec3'
+02-Oct-2014 20:02:05.500 INFO [http-nio-8080-exec-64] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 20:02:05.612 INFO [http-nio-8080-exec-61] org.apache.catalina.core.ApplicationContext.log Manager: restart: Reloading web application '/Stec3'
+02-Oct-2014 20:02:07.062 INFO [http-nio-8080-exec-56] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 20:02:07.107 INFO [http-nio-8080-exec-62] org.apache.catalina.core.ApplicationContext.log Manager: restart: Reloading web application '/Stec3'
+02-Oct-2014 20:02:10.611 INFO [http-nio-8080-exec-65] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 20:02:10.713 INFO [http-nio-8080-exec-62] org.apache.catalina.core.ApplicationContext.log Manager: restart: Reloading web application '/Stec3'
+02-Oct-2014 20:02:12.041 INFO [http-nio-8080-exec-56] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 20:02:12.067 INFO [http-nio-8080-exec-61] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 20:02:12.086 INFO [http-nio-8080-exec-71] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/Stec3'
+02-Oct-2014 20:02:12.607 INFO [http-nio-8080-exec-65] org.apache.catalina.core.ApplicationContext.log Manager: install: Installing context configuration at 'file:/var/folders/mk/gs7301h56x9ftxg8_12pkzrc0000gn/T/context1301112232422744026.xml'
+02-Oct-2014 20:02:12.652 INFO [http-nio-8080-exec-56] org.apache.catalina.core.ApplicationContext.log Manager: start: Starting web application '/Stec3'
+02-Oct-2014 20:03:19.840 INFO [http-nio-8080-exec-71] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 20:03:20.046 INFO [http-nio-8080-exec-65] org.apache.catalina.core.ApplicationContext.log Manager: restart: Reloading web application '/Stec3'
+02-Oct-2014 20:03:29.819 INFO [http-nio-8080-exec-76] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 20:03:29.847 INFO [http-nio-8080-exec-77] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 20:03:29.868 INFO [http-nio-8080-exec-78] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/Stec3'
+02-Oct-2014 20:03:30.391 INFO [http-nio-8080-exec-56] org.apache.catalina.core.ApplicationContext.log Manager: install: Installing context configuration at 'file:/var/folders/mk/gs7301h56x9ftxg8_12pkzrc0000gn/T/context982603014300114363.xml'
+02-Oct-2014 20:03:30.426 INFO [http-nio-8080-exec-72] org.apache.catalina.core.ApplicationContext.log Manager: start: Starting web application '/Stec3'
+02-Oct-2014 20:05:52.527 INFO [http-nio-8080-exec-85] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 20:05:52.543 INFO [http-nio-8080-exec-86] org.apache.catalina.core.ApplicationContext.log Manager: stop: Stopping web application '/Stec3'
+02-Oct-2014 20:05:52.559 INFO [http-nio-8080-exec-85] org.apache.catalina.core.ApplicationContext.log Manager: start: Starting web application '/Stec3'
+02-Oct-2014 20:06:19.679 INFO [http-nio-8080-exec-82] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 20:06:19.693 INFO [http-nio-8080-exec-88] org.apache.catalina.core.ApplicationContext.log Manager: stop: Stopping web application '/Stec3'
+02-Oct-2014 20:06:19.705 INFO [http-nio-8080-exec-83] org.apache.catalina.core.ApplicationContext.log Manager: start: Starting web application '/Stec3'
+02-Oct-2014 20:06:21.497 INFO [http-nio-8080-exec-81] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 20:06:21.513 INFO [http-nio-8080-exec-89] org.apache.catalina.core.ApplicationContext.log Manager: stop: Stopping web application '/Stec3'
+02-Oct-2014 20:06:21.531 INFO [http-nio-8080-exec-87] org.apache.catalina.core.ApplicationContext.log Manager: start: Starting web application '/Stec3'
+02-Oct-2014 20:06:25.451 INFO [http-nio-8080-exec-80] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 20:06:25.474 INFO [http-nio-8080-exec-83] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 20:06:25.492 INFO [http-nio-8080-exec-92] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/Stec3'
+02-Oct-2014 20:06:26.010 INFO [http-nio-8080-exec-80] org.apache.catalina.core.ApplicationContext.log Manager: install: Installing context configuration at 'file:/var/folders/mk/gs7301h56x9ftxg8_12pkzrc0000gn/T/context2152802168072880414.xml'
+02-Oct-2014 20:06:26.062 INFO [http-nio-8080-exec-87] org.apache.catalina.core.ApplicationContext.log Manager: start: Starting web application '/Stec3'
+02-Oct-2014 20:07:29.543 INFO [http-nio-8080-exec-87] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 20:07:29.557 INFO [http-nio-8080-exec-80] org.apache.catalina.core.ApplicationContext.log Manager: stop: Stopping web application '/Stec3'
+02-Oct-2014 20:07:29.572 INFO [http-nio-8080-exec-98] org.apache.catalina.core.ApplicationContext.log Manager: start: Starting web application '/Stec3'
+02-Oct-2014 20:07:49.768 INFO [http-nio-8080-exec-95] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 20:07:49.792 INFO [http-nio-8080-exec-99] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 20:07:49.813 INFO [http-nio-8080-exec-87] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/Stec3'
+02-Oct-2014 20:07:50.334 INFO [http-nio-8080-exec-95] org.apache.catalina.core.ApplicationContext.log Manager: install: Installing context configuration at 'file:/var/folders/mk/gs7301h56x9ftxg8_12pkzrc0000gn/T/context3931677299269173765.xml'
+02-Oct-2014 20:07:50.372 INFO [http-nio-8080-exec-98] org.apache.catalina.core.ApplicationContext.log Manager: start: Starting web application '/Stec3'
+02-Oct-2014 20:09:18.543 INFO [http-nio-8080-exec-95] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 20:09:18.556 INFO [http-nio-8080-exec-98] org.apache.catalina.core.ApplicationContext.log Manager: stop: Stopping web application '/Stec3'
+02-Oct-2014 20:09:18.570 INFO [http-nio-8080-exec-109] org.apache.catalina.core.ApplicationContext.log Manager: start: Starting web application '/Stec3'
+02-Oct-2014 20:09:22.303 INFO [http-nio-8080-exec-106] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 20:09:22.328 INFO [http-nio-8080-exec-101] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 20:09:22.342 INFO [http-nio-8080-exec-104] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/Stec3'
+02-Oct-2014 20:09:22.863 INFO [http-nio-8080-exec-102] org.apache.catalina.core.ApplicationContext.log Manager: install: Installing context configuration at 'file:/var/folders/mk/gs7301h56x9ftxg8_12pkzrc0000gn/T/context5781632647117057561.xml'
+02-Oct-2014 20:09:22.904 INFO [http-nio-8080-exec-107] org.apache.catalina.core.ApplicationContext.log Manager: start: Starting web application '/Stec3'
+02-Oct-2014 20:15:03.584 INFO [http-nio-8080-exec-119] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 20:15:03.609 INFO [http-nio-8080-exec-120] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 20:15:03.627 INFO [http-nio-8080-exec-111] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/Stec3'
+02-Oct-2014 20:15:04.146 INFO [http-nio-8080-exec-116] org.apache.catalina.core.ApplicationContext.log Manager: install: Installing context configuration at 'file:/var/folders/mk/gs7301h56x9ftxg8_12pkzrc0000gn/T/context5421715173199141168.xml'
+02-Oct-2014 20:15:04.186 INFO [http-nio-8080-exec-113] org.apache.catalina.core.ApplicationContext.log Manager: start: Starting web application '/Stec3'
+02-Oct-2014 20:16:55.131 INFO [http-nio-8080-exec-113] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 20:16:55.142 INFO [http-nio-8080-exec-126] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 20:16:55.158 INFO [http-nio-8080-exec-121] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/Stec3'
+02-Oct-2014 20:16:55.678 INFO [http-nio-8080-exec-124] org.apache.catalina.core.ApplicationContext.log Manager: install: Installing context configuration at 'file:/var/folders/mk/gs7301h56x9ftxg8_12pkzrc0000gn/T/context6224301755518556241.xml'
+02-Oct-2014 20:16:55.722 INFO [http-nio-8080-exec-113] org.apache.catalina.core.ApplicationContext.log Manager: start: Starting web application '/Stec3'
+02-Oct-2014 20:20:15.003 INFO [http-nio-8080-exec-124] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 20:20:15.013 INFO [http-nio-8080-exec-113] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 20:20:15.029 INFO [http-nio-8080-exec-128] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/Stec3'
+02-Oct-2014 20:20:15.550 INFO [http-nio-8080-exec-131] org.apache.catalina.core.ApplicationContext.log Manager: install: Installing context configuration at 'file:/var/folders/mk/gs7301h56x9ftxg8_12pkzrc0000gn/T/context5841066307043072903.xml'
+02-Oct-2014 20:20:15.589 INFO [http-nio-8080-exec-124] org.apache.catalina.core.ApplicationContext.log Manager: start: Starting web application '/Stec3'
+02-Oct-2014 20:22:06.605 INFO [http-nio-8080-exec-124] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 20:22:06.615 INFO [http-nio-8080-exec-140] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 20:22:06.632 INFO [http-nio-8080-exec-136] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/Stec3'
+02-Oct-2014 20:22:07.155 INFO [http-nio-8080-exec-140] org.apache.catalina.core.ApplicationContext.log Manager: install: Installing context configuration at 'file:/var/folders/mk/gs7301h56x9ftxg8_12pkzrc0000gn/T/context1720959050243090715.xml'
+02-Oct-2014 20:22:07.204 INFO [http-nio-8080-exec-124] org.apache.catalina.core.ApplicationContext.log Manager: start: Starting web application '/Stec3'
+02-Oct-2014 20:25:01.243 INFO [http-nio-8080-exec-146] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 20:25:01.326 INFO [http-nio-8080-exec-136] org.apache.catalina.core.ApplicationContext.log Manager: restart: Reloading web application '/Stec3'
+02-Oct-2014 20:26:46.671 INFO [http-nio-8080-exec-149] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 20:26:46.686 INFO [http-nio-8080-exec-136] org.apache.catalina.core.ApplicationContext.log Manager: stop: Stopping web application '/Stec3'
+02-Oct-2014 20:26:46.699 INFO [http-nio-8080-exec-148] org.apache.catalina.core.ApplicationContext.log Manager: start: Starting web application '/Stec3'
+02-Oct-2014 20:27:11.146 INFO [http-nio-8080-exec-147] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 20:27:11.160 INFO [http-nio-8080-exec-143] org.apache.catalina.core.ApplicationContext.log Manager: stop: Stopping web application '/Stec3'
+02-Oct-2014 20:27:11.174 INFO [http-nio-8080-exec-147] org.apache.catalina.core.ApplicationContext.log Manager: start: Starting web application '/Stec3'
+02-Oct-2014 20:27:11.183 SEVERE [http-nio-8080-exec-147] org.apache.catalina.core.ApplicationContext.log FAIL - Application at context path /Stec3 could not be started
+ org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/Stec3]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154)
+	at org.apache.catalina.manager.ManagerServlet.start(ManagerServlet.java:1265)
+	at org.apache.catalina.manager.ManagerServlet.doGet(ManagerServlet.java:357)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:618)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:108)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:618)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:537)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.IllegalArgumentException: Servlet mapping specifies an unknown servlet name my.package.MyApplication
+	at org.apache.catalina.core.StandardContext.addServletMapping(StandardContext.java:3146)
+	at org.apache.catalina.core.StandardContext.addServletMapping(StandardContext.java:3125)
+	at org.apache.catalina.startup.ContextConfig.configureContext(ContextConfig.java:1372)
+	at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1176)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:771)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:305)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5120)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 29 more
+
+02-Oct-2014 20:27:12.210 INFO [http-nio-8080-exec-143] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 20:27:12.237 INFO [http-nio-8080-exec-147] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 20:27:12.257 INFO [http-nio-8080-exec-153] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/Stec3'
+02-Oct-2014 20:27:12.776 INFO [http-nio-8080-exec-147] org.apache.catalina.core.ApplicationContext.log Manager: install: Installing context configuration at 'file:/var/folders/mk/gs7301h56x9ftxg8_12pkzrc0000gn/T/context6616627461592582604.xml'
+02-Oct-2014 20:27:19.314 INFO [http-nio-8080-exec-147] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 20:27:19.329 INFO [http-nio-8080-exec-151] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 20:27:19.351 INFO [http-nio-8080-exec-154] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/Stec3'
+02-Oct-2014 20:27:19.878 INFO [http-nio-8080-exec-150] org.apache.catalina.core.ApplicationContext.log Manager: install: Installing context configuration at 'file:/var/folders/mk/gs7301h56x9ftxg8_12pkzrc0000gn/T/context2761335223692347444.xml'
+02-Oct-2014 20:27:19.947 INFO [http-nio-8080-exec-154] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 20:27:19.979 INFO [http-nio-8080-exec-150] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 20:27:19.997 INFO [http-nio-8080-exec-136] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/Stec3'
+02-Oct-2014 20:27:20.519 INFO [http-nio-8080-exec-143] org.apache.catalina.core.ApplicationContext.log Manager: install: Installing context configuration at 'file:/var/folders/mk/gs7301h56x9ftxg8_12pkzrc0000gn/T/context6217650687826070177.xml'
+02-Oct-2014 20:27:26.381 INFO [http-nio-8080-exec-143] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 20:27:26.393 INFO [http-nio-8080-exec-156] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 20:27:26.413 INFO [http-nio-8080-exec-144] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/Stec3'
+02-Oct-2014 20:27:26.936 INFO [http-nio-8080-exec-152] org.apache.catalina.core.ApplicationContext.log Manager: install: Installing context configuration at 'file:/var/folders/mk/gs7301h56x9ftxg8_12pkzrc0000gn/T/context2015063191732033785.xml'
+02-Oct-2014 20:29:16.630 INFO [http-nio-8080-exec-144] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 20:29:16.640 INFO [http-nio-8080-exec-152] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 20:29:16.656 INFO [http-nio-8080-exec-154] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/Stec3'
+02-Oct-2014 20:29:17.175 INFO [http-nio-8080-exec-155] org.apache.catalina.core.ApplicationContext.log Manager: install: Installing context configuration at 'file:/var/folders/mk/gs7301h56x9ftxg8_12pkzrc0000gn/T/context7545933544490028403.xml'
+02-Oct-2014 20:29:25.528 INFO [http-nio-8080-exec-155] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 20:29:25.549 INFO [http-nio-8080-exec-156] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 20:29:25.563 INFO [http-nio-8080-exec-157] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/Stec3'
+02-Oct-2014 20:29:26.087 INFO [http-nio-8080-exec-158] org.apache.catalina.core.ApplicationContext.log Manager: install: Installing context configuration at 'file:/var/folders/mk/gs7301h56x9ftxg8_12pkzrc0000gn/T/context5121325370744841226.xml'
+02-Oct-2014 20:29:26.339 INFO [http-nio-8080-exec-159] org.apache.catalina.core.ApplicationContext.log Manager: start: Starting web application '/Stec3'
+02-Oct-2014 20:29:33.538 INFO [http-nio-8080-exec-157] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 20:29:33.552 INFO [http-nio-8080-exec-158] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/Stec3'
+02-Oct-2014 20:29:41.903 INFO [http-nio-8080-exec-154] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 20:29:43.010 INFO [http-nio-8080-exec-156] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 20:29:46.531 INFO [http-nio-8080-exec-163] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 20:29:46.563 INFO [http-nio-8080-exec-156] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 20:29:46.583 INFO [http-nio-8080-exec-165] org.apache.catalina.core.ApplicationContext.log Manager: install: Installing context configuration at 'file:/var/folders/mk/gs7301h56x9ftxg8_12pkzrc0000gn/T/context1126707510608286765.xml'
+02-Oct-2014 20:29:46.843 INFO [http-nio-8080-exec-157] org.apache.catalina.core.ApplicationContext.log Manager: start: Starting web application '/Stec3'
+02-Oct-2014 20:30:49.990 INFO [http-nio-8080-exec-163] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 20:30:50.093 INFO [http-nio-8080-exec-170] org.apache.catalina.core.ApplicationContext.log Manager: restart: Reloading web application '/Stec3'
+02-Oct-2014 20:42:34.360 INFO [http-nio-8080-exec-7] org.apache.catalina.core.ApplicationContext.log Manager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+02-Oct-2014 20:42:34.360 INFO [http-nio-8080-exec-7] org.apache.catalina.core.ApplicationContext.log Manager: init: Global resources are available
+02-Oct-2014 20:42:34.361 INFO [http-nio-8080-exec-7] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 20:42:34.387 INFO [http-nio-8080-exec-8] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/Stec3'
+02-Oct-2014 20:42:34.940 INFO [http-nio-8080-exec-10] org.apache.catalina.core.ApplicationContext.log Manager: install: Installing context configuration at 'file:/var/folders/mk/gs7301h56x9ftxg8_12pkzrc0000gn/T/context5587199367423703543.xml'
+02-Oct-2014 20:42:35.317 INFO [http-nio-8080-exec-11] org.apache.catalina.core.ApplicationContext.log Manager: start: Starting web application '/Stec3'
