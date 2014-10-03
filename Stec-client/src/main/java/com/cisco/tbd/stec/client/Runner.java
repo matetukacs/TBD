@@ -6,6 +6,7 @@
 
 package com.cisco.tbd.stec.client;
 
+import com.cisco.logreader.logentry.LogEntry;
 import static com.cisco.tbd.stec.client.FileUtils.getLinesOfFile;
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -36,16 +37,16 @@ public class Runner {
     public static int lastLineCount = 0;
     public static void main(String[] args) throws Exception{
         
-        if (args.length == 0) {
-            System.err.println("Specify log file location");
-        }
+        //if (args.length == 0) {
+         //   System.err.println("Specify log file location");
+        //}
         
         
         
         
         RuleRequester.runWithFrequency(5000);
         
-        String filePath = args[0];
+        String filePath = "/var/log/snort/mylog.txt";
         
 //        
 //        List<String> lines = getLinesOfFile(filePath);
@@ -59,7 +60,12 @@ public class Runner {
             
             if (currentLineCount != lastLineCount) {
                 
-                ServerConnection.pushDetectedThreat(LogUtils.getAttackData(FileUtils.getLastLineOfFile(filePath)));
+                LogEntry logEntry = LogUtils.getAttackData(FileUtils.getLastLineOfFile(filePath));
+                
+                if (logEntry instanceof AttackLogEntry) {
+                    ServerConnection.pushDetectedThreat((AttackLogEntry)logEntry);
+                    System.out.println(logEntry.toString());
+                }
                 
                 lastLineCount = currentLineCount;
             }

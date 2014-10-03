@@ -17,72 +17,75 @@ import java.util.regex.Pattern;
  */
 public class LogEntryUtils {
 
-     public static boolean lineIsConvertableToLogEntry(String logLine, Class<? extends LogEntry> logEntryType) {
+    public static boolean lineIsConvertableToLogEntry(String logLine, Class<? extends LogEntry> logEntryType) {
 
         validate(logEntryType);
-        
+
 //        if (!lineContainsRequiredAttributeSeparators(logLine, logEntryType)) {
 //            return false;
 //        }
-        
         int expectedAttributeCount = getFormatAttributeCount(logEntryType);
-        
-        ArrayList<String> logLineParts = getAttributeValuesFromLogLine(logLine, logEntryType);
 
-        
-        if (expectedAttributeCount != logLineParts.size()) {
-            return false;
-        }
-        
-        for (String part : logLineParts) {
-            Field logAttribute = getAttibuteFieldAtIndex(logEntryType, logLineParts.indexOf(part));
+        try {
+            ArrayList<String> logLineParts = getAttributeValuesFromLogLine(logLine, logEntryType);
 
-            if (!LogAttributeUtils.textIsConvertableToLogAttribute(part, logAttribute)) {
+            if (expectedAttributeCount != logLineParts.size()) {
                 return false;
             }
+
+            for (String part : logLineParts) {
+                Field logAttribute = getAttibuteFieldAtIndex(logEntryType, logLineParts.indexOf(part));
+
+                if (!LogAttributeUtils.textIsConvertableToLogAttribute(part, logAttribute)) {
+                    return false;
+                }
+            }
+            return true;
+        } catch (Exception e) {
+            return false;
         }
-        return true;
+
     }
 
     protected static boolean lineContainsRequiredAttributeSeparators(String logLine, Class<? extends LogEntry> logEntryType) {
-        
+
         String[] attributeSeparators = getAttributeSeparators(logEntryType);
-        
+
         for (String separator : attributeSeparators) {
             if (!logLine.contains(separator)) {
                 return false;
             }
-                
-           String literalSeparator = Pattern.quote(separator);
-            
-           logLine = logLine.replaceFirst(literalSeparator, "");
+
+            String literalSeparator = Pattern.quote(separator);
+
+            logLine = logLine.replaceFirst(literalSeparator, "");
         }
         return true;
     }
-     
+
     protected static String[] getAttributeSeparators(Class<? extends LogEntry> logEntryType) {
-        
+
         String attributePlaceholder = LogEntry.getLiteralAttributePlaceholder();
-                
+
         String format = getFormat(logEntryType);
-        
+
         String[] attributeSeparators = format.split(attributePlaceholder);
-        
+
         return attributeSeparators;
     }
-    
+
     public static int getFormatAttributeCount(Class<? extends LogEntry> logEntryType) {
-        
+
         String format = getFormat(logEntryType);
         String attributePlaceholder = LogEntry.getAttributePlaceholder();
-        
+
         return format.length() - format.replace(attributePlaceholder, "").length();
     }
 
     public static ArrayList<String> getAttributeValuesFromLogLine(String logLine, Class<? extends LogEntry> logEntryType) {
 
         String[] attributeSeparators = getAttributeSeparators(logEntryType);
-        
+
         ArrayList<String> attributeValues = new ArrayList<>();
 
         String unparsedText = logLine;
@@ -93,13 +96,13 @@ public class LogEntryUtils {
             String currentAttribute;
 
             if (separatorIndex < attributeSeparators.length) {
-                
+
                 String separator = attributeSeparators[separatorIndex];
-                
+
                 String literalSeparator = Pattern.quote(separator);
 
                 String[] lineParts = unparsedText.split(literalSeparator, 2);
-                
+
                 if (lineParts.length != 2) {
                     throw new IllegalArgumentException(logLine + "cannot be split into attributes based on the format of " + logEntryType.getName());
                 }
@@ -152,11 +155,11 @@ public class LogEntryUtils {
     }
 
     public static void validate(Class<? extends LogEntry> logEntryType) {
-        
+
         if (!logEntryType.isAnnotationPresent(ParsableLogEntry.class)) {
             throw new MissingAnnotationException("Log entry subtype is not parsable. @ParsableLogEntry annotation missing");
         }
-        
+
         ArrayList<Field> attributeFields = getAttributeFields(logEntryType);
 
         int expectedAttributeCount = getFormatAttributeCount(logEntryType);
