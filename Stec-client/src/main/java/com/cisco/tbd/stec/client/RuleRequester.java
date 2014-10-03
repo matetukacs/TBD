@@ -15,6 +15,10 @@ import java.util.logging.Logger;
 import org.codehaus.jettison.json.JSONException;
 import org.json.simple.JSONArray;
 import org.json.simple.parser.ParseException;
+import java.io.BufferedWriter;
+import java.io.Writer;
+import java.io.FileWriter;
+import java.io.PrintWriter;
 
 /**
  *
@@ -29,8 +33,8 @@ public class RuleRequester extends TimerTask {
     
     public void run() {
         try {
-            //        System.out.println("Hello from a thread!");
-            JSONArray newRules = ServerConnection.pullNewRules(FileUtils.getLastLineOfFile(Runner.PATH_TO_TIME_STAMP_FILE));
+            JSONArray newRules; //        System.out.println("Hello from a thread!");
+            newRules = ServerConnection.pullNewRules(FileUtils.getLastLineOfFile(Runner.PATH_TO_TIME_STAMP_FILE));
             
          updateLocalRulesWith(newRules);   
             
@@ -42,7 +46,20 @@ public class RuleRequester extends TimerTask {
     }
     
     public void updateLocalRulesWith(JSONArray rules) {
-        //create rules in right format and append to right file. possible throgh a static method in fileutisl. there is example code as well. 
-    }
-
+        //create rules in right format and append to right file. possible throgh a static method in fileutisl. there is example code as well.            //FileWriter fWriter = new FileWriter(Runner.PATH_TO_TIME_STAMP_FILE);
+        String rulesWritten = rules.toString();
+        int startArrayIndex = 0;
+        int endArrayIndex = 0;
+        while(endArrayIndex <= rulesWritten.length()) {
+            startArrayIndex = rulesWritten.indexOf("{", endArrayIndex) + 1;
+            endArrayIndex = rulesWritten.indexOf("}", endArrayIndex);
+            String output = rulesWritten.substring(startArrayIndex, endArrayIndex);
+            try(PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter("log.txt", true)))) {
+                out.println(output);
+            } catch (IOException e) {
+                //exception handling left as an exercise for the reader
+            }
+            //fWriter.write(output+"/n");
+        }
+    }       
 }
