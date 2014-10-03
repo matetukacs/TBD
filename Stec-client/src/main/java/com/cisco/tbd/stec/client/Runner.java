@@ -29,6 +29,8 @@ import org.codehaus.jettison.json.JSONObject;
  */
 public class Runner {
 
+    public static final String PATH_TO_TIME_STAMP_FILE = "./../timestamp.txt";
+    
     public static int lastLineCount = 0;
     public static void main(String[] args) throws Exception{
         

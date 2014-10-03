@@ -30,7 +30,7 @@ public class RuleRequester extends TimerTask {
     public void run() {
         try {
             //        System.out.println("Hello from a thread!");
-            JSONArray newRules = ServerConnection.pullNewRules("TimeStamp");
+            JSONArray newRules = ServerConnection.pullNewRules(FileUtils.getLastLineOfFile(Runner.PATH_TO_TIME_STAMP_FILE));
             
          updateLocalRulesWith(newRules);   
             

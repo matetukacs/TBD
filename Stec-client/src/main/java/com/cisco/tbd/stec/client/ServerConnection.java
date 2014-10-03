@@ -125,7 +125,7 @@ public class ServerConnection {
         
         br.close();
         
-        if (FileUtils.removeFile("./../timestamp.txt")) {
+        if (FileUtils.removeFile(Runner.PATH_TO_TIME_STAMP_FILE)) {
             FileUtils.createFileWithText("./../timestamp.txt", newTimeStamp);
         }
 
