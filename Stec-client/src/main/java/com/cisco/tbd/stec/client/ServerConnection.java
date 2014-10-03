@@ -90,7 +90,7 @@ public class ServerConnection {
 
     }
 
-    public static ArrayList<String> pullNewRules(String timeStamp) throws IOException, ParseException {
+    public static JSONArray pullNewRules(String timeStamp) throws IOException, ParseException {
 
         String request = "http://10.154.244.56/stec/get_threats.php?token=weiuyrwerywiuery&exchange=1&from="+timeStamp;
 
@@ -122,17 +122,13 @@ public class ServerConnection {
         String newTimeStamp = json.get("timestamp").toString();
         JSONArray rules = (JSONArray) json.get("data");
         
-        ArrayList<String> newRules = new ArrayList<>();
         
-        for (Object object : rules) {
-            newRules.add(object.toString());
-        }
         br.close();
         
         if (FileUtils.removeFile("./../timestamp.txt")) {
             FileUtils.createFileWithText("./../timestamp.txt", newTimeStamp);
         }
 
-        return newRules;
+        return rules;
     }
 }

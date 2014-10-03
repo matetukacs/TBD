@@ -7,11 +7,13 @@
 package com.cisco.tbd.stec.client;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Timer;
 import java.util.TimerTask;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.codehaus.jettison.json.JSONException;
+import org.json.simple.JSONArray;
 import org.json.simple.parser.ParseException;
 
 /**
@@ -28,17 +30,18 @@ public class RuleRequester extends TimerTask {
     public void run() {
         try {
             //        System.out.println("Hello from a thread!");
-            ServerConnection.pullNewRules("TimeStamp");
+            JSONArray newRules = ServerConnection.pullNewRules("TimeStamp");
+            
+         updateLocalRulesWith(newRules);   
+            
         } catch (IOException ex) {
             Logger.getLogger(RuleRequester.class.getName()).log(Level.SEVERE, null, ex);
         } catch (ParseException ex) {
             Logger.getLogger(RuleRequester.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (JSONException ex) {
-            Logger.getLogger(RuleRequester.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
     
-    public void updateLocalRulesWith(ArrayList<String> rules) {
+    public void updateLocalRulesWith(JSONArray rules) {
         //create rules in right format and append to right file. possible throgh a static method in fileutisl. there is example code as well. 
     }
 
