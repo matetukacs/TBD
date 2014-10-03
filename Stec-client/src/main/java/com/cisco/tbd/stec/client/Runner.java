@@ -32,16 +32,16 @@ public class Runner {
     public static int lastLineCount = 0;
     public static void main(String[] args) throws Exception{
         
-//        if (args.length == 0) {
-//            System.err.println("Specify log file location");
-//        }
-//        
-//        File file = new File(args[0]);
+        if (args.length == 0) {
+            System.err.println("Specify log file location");
+        }
+        
+        
         
         
         RuleRequester.runWithFrequency(5000);
         
-        String filePath = "./../log.txt";
+        String filePath = args[0];
         
         
         List<String> lines = getLinesOfFile(filePath);

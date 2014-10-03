@@ -27,7 +27,7 @@ public class ServerConnection {
     
     public static void pushDetectedThreat(String clientIpAddress, String attackerIpAddress, String deviceKey, int exchangeId) throws IOException, JSONException {
         DefaultHttpClient client = new DefaultHttpClient();
-        HttpPost post = new HttpPost("http://10.154.244.56");
+        HttpPost post = new HttpPost("http://10.154.244.56/updatethreats");
         
         JSONObject json = new JSONObject();
         json.put("clientIp", clientIpAddress);
@@ -49,7 +49,7 @@ public class ServerConnection {
     public static ArrayList<String> pullNewRules(String timeStamp) throws IOException {
         
         HttpClient client = new DefaultHttpClient();
-        HttpGet request = new HttpGet("http://10.154.244.56");
+        HttpGet request = new HttpGet("http://10.154.244.56:8080/Stec3/services/threats/demo");
         HttpResponse response = client.execute(request);
         BufferedReader rd = new BufferedReader (new InputStreamReader(response.getEntity().getContent()));
         String line = "";

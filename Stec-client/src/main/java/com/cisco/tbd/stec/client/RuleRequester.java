@@ -6,8 +6,11 @@
 
 package com.cisco.tbd.stec.client;
 
+import java.io.IOException;
 import java.util.Timer;
 import java.util.TimerTask;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -21,7 +24,12 @@ public class RuleRequester extends TimerTask {
     }
     
     public void run() {
-        System.out.println("Hello from a thread!");
+        try {
+            //        System.out.println("Hello from a thread!");
+            ServerConnection.pullNewRules("TimeStamp");
+        } catch (IOException ex) {
+            Logger.getLogger(RuleRequester.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
 }
