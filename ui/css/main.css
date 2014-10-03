@@ -1,0 +1,23 @@
+.header {
+    background-color: #ddddee;
+}
+
+.stec-logo {
+    margin-left: 40px;
+    display: inline-block;
+}
+
+.logged-in {
+    float: right;
+    margin-top: 20px;
+    margin-right: 40px;
+}
+
+.buttons {
+    float: right;
+    margin-right: 40px;
+}
+
+.subscribe {
+    text-align: right;
+}
