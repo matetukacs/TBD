@@ -25,7 +25,7 @@ import org.codehaus.jettison.json.JSONObject;
  */
 public class ServerConnection {
     
-    public static void pushDetectedThreat(String clientIpAddress, String attackerIpAddress, String deviceKey, int exchangeId) throws IOException, JSONException {
+    public static void pushDetectedThreat(String attackerIpAddress, String deviceKey, int exchangeId) throws IOException, JSONException {
         DefaultHttpClient client = new DefaultHttpClient();
         HttpPost post = new HttpPost("http://10.154.244.56/updatethreats");
         
