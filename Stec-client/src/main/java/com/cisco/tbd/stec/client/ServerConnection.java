@@ -91,6 +91,7 @@ public class ServerConnection {
 
         
         JSONObject json = (JSONObject)new JSONParser().parse(br.readLine());
+        //System.out.println(json.toString());
         String newTimeStamp = json.get("timestamp").toString();
         JSONArray rules = (JSONArray) json.get("data");
         
