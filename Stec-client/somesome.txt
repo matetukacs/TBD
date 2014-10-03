@@ -1,0 +1,1 @@
+block tcp 1.1.1.1 any -> any any (msg:"Dynamic rule=200007"; sid:200007;)

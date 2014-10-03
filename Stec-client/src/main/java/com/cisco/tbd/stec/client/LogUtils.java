@@ -6,6 +6,7 @@
 
 package com.cisco.tbd.stec.client;
 
+import com.cisco.logreader.logentry.LogEntry;
 import com.cisco.logreader.logentry.LogEntryFactory;
 
 /**
@@ -14,11 +15,11 @@ import com.cisco.logreader.logentry.LogEntryFactory;
  */
 public class LogUtils {
 
-    public static AttackLogEntry getAttackData(String log) {
+    public static LogEntry getAttackData(String log) {
         
         LogEntryFactory.setLogEntryTypes(AttackLogEntry.class);
         
-        AttackLogEntry logEntry = (AttackLogEntry) LogEntryFactory.getLogEntryFromLine(log);
+        LogEntry logEntry = LogEntryFactory.getLogEntryFromLine(log);
         
         return logEntry;
     }
