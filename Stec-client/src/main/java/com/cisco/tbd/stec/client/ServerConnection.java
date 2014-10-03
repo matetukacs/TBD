@@ -31,24 +31,7 @@ import org.json.simple.parser.ParseException;
  */
 public class ServerConnection {
 
-    public static void pushDetectedThreat(AttackData attackData) throws IOException {
-        //DefaultHttpClient client = new DefaultHttpClient();
-//        HttpPost post = new HttpPost("http://10.154.244.56/updatethreats");
-//        //Example: $res['data'] = $my_mysql_wr->insert_threats("weiuyrwerywiuery", 1, "1.2.3.4, ""this is deme", "dos", 3);
-//        JSONObject json = new JSONObject();
-//        json.put("attackerIp", attackData.getAttackIp());
-//        json.put("deviceKey", "adaskjasd");
-//        json.put("exchangeId", 1);
-//        
-//        
-//        post.setEntity(new StringEntity(json.toString()));
-//        
-//        HttpResponse response = client.execute(post);
-//        BufferedReader rd = new BufferedReader(new InputStreamReader(response.getEntity().getContent()));
-//        String line = "";
-//        while ((line = rd.readLine()) != null) {
-//            System.out.println(line);
-//        }
+    public static void pushDetectedThreat(AttackLogEntry logEntry) throws IOException {
 
         String request = "http://10.154.244.56/stec/insert_threats.php";
         HttpClient client = new HttpClient();
@@ -56,36 +39,36 @@ public class ServerConnection {
         PostMethod method = new PostMethod(request);
 
     // Add POST parameters
-        method.addParameter("token", "weiuyrwerywiuery");
+        method.addParameter("token", Runner.DEVICE_ID);
 
-        method.addParameter("exchange", "1");
+        method.addParameter("exchange", Runner.EXCHANGE_ID);
 
-        method.addParameter("ip", "10");
+        method.addParameter("ip", logEntry.getAttackIp());
 
-        method.addParameter("descr", "An attack");
+        method.addParameter("descr", logEntry.toString());
 
         method.addParameter("type", "dos");
 
-        method.addParameter("level", "10");
+        method.addParameter("level", logEntry.getPriorityLevel());
 
     // Send POST request
         int statusCode = client.executeMethod(method);
+//
+//        InputStream rstream = null;
+//
+//        rstream = method.getResponseBodyAsStream();
+//
+//        BufferedReader br = new BufferedReader(new InputStreamReader(rstream));
+//
+//        String line;
+//
+//        while ((line = br.readLine()) != null) {
+//
+//            System.out.println(line);
+//
+//        }
 
-        InputStream rstream = null;
-
-        rstream = method.getResponseBodyAsStream();
-
-        BufferedReader br = new BufferedReader(new InputStreamReader(rstream));
-
-        String line;
-
-        while ((line = br.readLine()) != null) {
-
-            System.out.println(line);
-
-        }
-
-        br.close();
+//        br.close();
         // Get the response body
 
     }
@@ -98,10 +81,6 @@ public class ServerConnection {
 
         GetMethod method = new GetMethod(request);
 
-//        method.addRequestHeader("token", "weiuyrwerywiuery");
-//        method.addRequestHeader("exchange", "1");
-//        method.addRequestHeader("from", timeStamp);
-		// Send GET request
         int statusCode = client.executeMethod(method);
 
         InputStream rstream = null;
@@ -110,13 +89,6 @@ public class ServerConnection {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(rstream));
 
-//        String line;
-//
-//        while ((line = br.readLine()) != null) {
-//
-//            System.out.println(line);
-//
-//        }
         
         JSONObject json = (JSONObject)new JSONParser().parse(br.readLine());
         String newTimeStamp = json.get("timestamp").toString();
@@ -126,7 +98,7 @@ public class ServerConnection {
         br.close();
         
         if (FileUtils.removeFile(Runner.PATH_TO_TIME_STAMP_FILE)) {
-            FileUtils.createFileWithText("./../timestamp.txt", newTimeStamp);
+            FileUtils.createFileWithText(Runner.PATH_TO_TIME_STAMP_FILE, newTimeStamp);
         }
 
         return rules;
