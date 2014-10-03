@@ -32,3 +32,150 @@
 02-Oct-2014 15:59:12.741 WARNING [http-nio-8080-exec-2] org.apache.catalina.startup.SetContextPropertiesRule.begin [SetContextPropertiesRule]{Context} Setting property 'antiJARLocking' to 'true' did not find a matching property.
 02-Oct-2014 15:59:12.814 INFO [http-nio-8080-exec-2] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor /Users/matetukacs/DevEnv/NetBeans/Hackathon_project/apache-tomcat-8.0.14/conf/Catalina/localhost/ROOT.xml has finished in 77 ms
 02-Oct-2014 15:59:12.825 INFO [http-nio-8080-exec-7] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[]] after start() had already been called. The second call will be ignored.
+02-Oct-2014 18:18:49.537 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version: Apache Tomcat/8.0.14
+02-Oct-2014 18:18:49.538 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:   Sep 24 2014 09:01:51
+02-Oct-2014 18:18:49.538 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:  8.0.14.0
+02-Oct-2014 18:18:49.538 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:        Mac OS X
+02-Oct-2014 18:18:49.538 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:     10.9.4
+02-Oct-2014 18:18:49.538 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:   x86_64
+02-Oct-2014 18:18:49.539 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:    1.7.0_67-b01
+02-Oct-2014 18:18:49.539 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:     Oracle Corporation
+02-Oct-2014 18:18:49.874 INFO [main] org.apache.catalina.core.AprLifecycleListener.init The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Applications/NetBeans/NetBeans 8.0.1.app/Contents/Resources/NetBeans/webcommon/bin::/Users/ttsatury/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+02-Oct-2014 18:18:50.568 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+02-Oct-2014 18:18:50.593 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+02-Oct-2014 18:18:50.597 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+02-Oct-2014 18:18:50.601 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+02-Oct-2014 18:18:50.601 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1159 ms
+02-Oct-2014 18:18:50.832 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+02-Oct-2014 18:18:50.832 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.14
+02-Oct-2014 18:18:50.842 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor /Users/ttsatury/Documents/HackIT/TBD/apache-tomcat-8.0.14/conf/Catalina/localhost/ROOT.xml
+02-Oct-2014 18:18:51.120 WARNING [localhost-startStop-1] org.apache.catalina.startup.SetContextPropertiesRule.begin [SetContextPropertiesRule]{Context} Setting property 'antiJARLocking' to 'true' did not find a matching property.
+02-Oct-2014 18:18:51.177 SEVERE [localhost-startStop-1] org.apache.catalina.core.ContainerBase.addChildInternal ContainerBase.addChild: start: 
+ org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:724)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:700)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:714)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:581)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1685)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [org.apache.catalina.webresources.StandardRoot@b21e0bc]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4900)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5029)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 10 more
+Caused by: java.lang.IllegalArgumentException: The main resource set specified [/Users/matetukacs/DevEnv/NetBeans/Hackathon_project/hackProject/Stec/target/Stec-1.0] is not valid
+	at org.apache.catalina.webresources.StandardRoot.startInternal(StandardRoot.java:665)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 13 more
+
+02-Oct-2014 18:18:51.179 SEVERE [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Error deploying configuration descriptor /Users/ttsatury/Documents/HackIT/TBD/apache-tomcat-8.0.14/conf/Catalina/localhost/ROOT.xml
+ java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[]]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:727)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:700)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:714)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:581)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1685)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+02-Oct-2014 18:18:51.180 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor /Users/ttsatury/Documents/HackIT/TBD/apache-tomcat-8.0.14/conf/Catalina/localhost/ROOT.xml has finished in 338 ms
+02-Oct-2014 18:18:51.181 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/ttsatury/Documents/HackIT/TBD/apache-tomcat-8.0.14/webapps/docs
+02-Oct-2014 18:18:51.623 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/ttsatury/Documents/HackIT/TBD/apache-tomcat-8.0.14/webapps/docs has finished in 442 ms
+02-Oct-2014 18:18:51.623 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/ttsatury/Documents/HackIT/TBD/apache-tomcat-8.0.14/webapps/examples
+02-Oct-2014 18:18:52.153 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/ttsatury/Documents/HackIT/TBD/apache-tomcat-8.0.14/webapps/examples has finished in 529 ms
+02-Oct-2014 18:18:52.153 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/ttsatury/Documents/HackIT/TBD/apache-tomcat-8.0.14/webapps/host-manager
+02-Oct-2014 18:18:52.193 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/ttsatury/Documents/HackIT/TBD/apache-tomcat-8.0.14/webapps/host-manager has finished in 39 ms
+02-Oct-2014 18:18:52.193 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/ttsatury/Documents/HackIT/TBD/apache-tomcat-8.0.14/webapps/manager
+02-Oct-2014 18:18:52.223 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/ttsatury/Documents/HackIT/TBD/apache-tomcat-8.0.14/webapps/manager has finished in 30 ms
+02-Oct-2014 18:18:52.227 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+02-Oct-2014 18:18:52.234 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+02-Oct-2014 18:18:52.235 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1633 ms
+02-Oct-2014 18:19:45.027 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+02-Oct-2014 18:19:45.028 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+02-Oct-2014 18:19:45.082 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+02-Oct-2014 18:19:45.133 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+02-Oct-2014 18:19:45.185 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+02-Oct-2014 18:19:45.186 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+02-Oct-2014 18:19:45.187 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+02-Oct-2014 18:19:45.187 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+02-Oct-2014 19:26:55.821 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version: Apache Tomcat/8.0.14
+02-Oct-2014 19:26:55.822 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:   Sep 24 2014 09:01:51
+02-Oct-2014 19:26:55.823 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:  8.0.14.0
+02-Oct-2014 19:26:55.823 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:        Mac OS X
+02-Oct-2014 19:26:55.823 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:     10.9.4
+02-Oct-2014 19:26:55.823 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:   x86_64
+02-Oct-2014 19:26:55.823 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:    1.7.0_67-b01
+02-Oct-2014 19:26:55.823 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:     Oracle Corporation
+02-Oct-2014 19:26:56.243 INFO [main] org.apache.catalina.core.AprLifecycleListener.init The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Applications/NetBeans/NetBeans 8.0.1.app/Contents/Resources/NetBeans/webcommon/bin::/Users/ttsatury/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+02-Oct-2014 19:26:56.660 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+02-Oct-2014 19:26:56.714 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+02-Oct-2014 19:26:56.718 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+02-Oct-2014 19:26:56.722 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+02-Oct-2014 19:26:56.722 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1084 ms
+02-Oct-2014 19:26:56.780 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+02-Oct-2014 19:26:56.780 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.14
+02-Oct-2014 19:26:56.821 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor /Users/ttsatury/Documents/HackIT/TBD/apache-tomcat-8.0.14/conf/Catalina/localhost/ROOT.xml
+02-Oct-2014 19:26:56.895 WARNING [localhost-startStop-1] org.apache.catalina.startup.SetContextPropertiesRule.begin [SetContextPropertiesRule]{Context} Setting property 'antiJARLocking' to 'true' did not find a matching property.
+02-Oct-2014 19:26:56.939 SEVERE [localhost-startStop-1] org.apache.catalina.core.ContainerBase.addChildInternal ContainerBase.addChild: start: 
+ org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:724)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:700)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:714)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:581)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1685)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [org.apache.catalina.webresources.StandardRoot@5d295c59]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4900)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5029)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 10 more
+Caused by: java.lang.IllegalArgumentException: The main resource set specified [/Users/matetukacs/DevEnv/NetBeans/Hackathon_project/hackProject/Stec/target/Stec-1.0] is not valid
+	at org.apache.catalina.webresources.StandardRoot.startInternal(StandardRoot.java:665)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 13 more
+
+02-Oct-2014 19:26:56.940 SEVERE [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Error deploying configuration descriptor /Users/ttsatury/Documents/HackIT/TBD/apache-tomcat-8.0.14/conf/Catalina/localhost/ROOT.xml
+ java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[]]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:727)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:700)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:714)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:581)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1685)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+02-Oct-2014 19:26:56.942 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor /Users/ttsatury/Documents/HackIT/TBD/apache-tomcat-8.0.14/conf/Catalina/localhost/ROOT.xml has finished in 120 ms
+02-Oct-2014 19:26:56.943 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/ttsatury/Documents/HackIT/TBD/apache-tomcat-8.0.14/webapps/docs
+02-Oct-2014 19:26:57.388 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/ttsatury/Documents/HackIT/TBD/apache-tomcat-8.0.14/webapps/docs has finished in 445 ms
+02-Oct-2014 19:26:57.388 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/ttsatury/Documents/HackIT/TBD/apache-tomcat-8.0.14/webapps/examples
+02-Oct-2014 19:26:57.982 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/ttsatury/Documents/HackIT/TBD/apache-tomcat-8.0.14/webapps/examples has finished in 594 ms
+02-Oct-2014 19:26:57.982 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/ttsatury/Documents/HackIT/TBD/apache-tomcat-8.0.14/webapps/host-manager
+02-Oct-2014 19:26:58.044 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/ttsatury/Documents/HackIT/TBD/apache-tomcat-8.0.14/webapps/host-manager has finished in 62 ms
+02-Oct-2014 19:26:58.044 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/ttsatury/Documents/HackIT/TBD/apache-tomcat-8.0.14/webapps/manager
+02-Oct-2014 19:26:58.092 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/ttsatury/Documents/HackIT/TBD/apache-tomcat-8.0.14/webapps/manager has finished in 48 ms
+02-Oct-2014 19:26:58.095 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+02-Oct-2014 19:26:58.102 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+02-Oct-2014 19:26:58.103 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1380 ms
+02-Oct-2014 19:26:59.012 INFO [http-nio-8080-exec-10] org.apache.catalina.startup.HostConfig.undeploy Undeploying context []
+02-Oct-2014 19:26:59.093 INFO [http-nio-8080-exec-9] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor /Users/ttsatury/Documents/HackIT/TBD/apache-tomcat-8.0.14/conf/Catalina/localhost/ROOT.xml
+02-Oct-2014 19:26:59.097 WARNING [http-nio-8080-exec-9] org.apache.catalina.startup.SetContextPropertiesRule.begin [SetContextPropertiesRule]{Context} Setting property 'antiJARLocking' to 'true' did not find a matching property.
+02-Oct-2014 19:26:59.168 INFO [http-nio-8080-exec-9] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor /Users/ttsatury/Documents/HackIT/TBD/apache-tomcat-8.0.14/conf/Catalina/localhost/ROOT.xml has finished in 75 ms
+02-Oct-2014 19:26:59.178 INFO [http-nio-8080-exec-1] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[]] after start() had already been called. The second call will be ignored.

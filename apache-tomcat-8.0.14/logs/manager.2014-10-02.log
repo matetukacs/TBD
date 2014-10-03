@@ -6,3 +6,9 @@
 02-Oct-2014 15:59:12.711 INFO [http-nio-8080-exec-12] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
 02-Oct-2014 15:59:12.730 INFO [http-nio-8080-exec-2] org.apache.catalina.core.ApplicationContext.log Manager: install: Installing context configuration at 'file:/var/folders/v1/f0bk_fhs2vlf0gxw6hvjb18r0000gn/T/context6147657373786790049.xml'
 02-Oct-2014 15:59:12.824 INFO [http-nio-8080-exec-7] org.apache.catalina.core.ApplicationContext.log Manager: start: Starting web application '/'
+02-Oct-2014 19:26:58.429 INFO [http-nio-8080-exec-9] org.apache.catalina.core.ApplicationContext.log Manager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+02-Oct-2014 19:26:58.429 INFO [http-nio-8080-exec-9] org.apache.catalina.core.ApplicationContext.log Manager: init: Global resources are available
+02-Oct-2014 19:26:58.460 INFO [http-nio-8080-exec-9] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+02-Oct-2014 19:26:58.493 INFO [http-nio-8080-exec-10] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/'
+02-Oct-2014 19:26:59.066 INFO [http-nio-8080-exec-9] org.apache.catalina.core.ApplicationContext.log Manager: install: Installing context configuration at 'file:/var/folders/mk/gs7301h56x9ftxg8_12pkzrc0000gn/T/context6440123279897566901.xml'
+02-Oct-2014 19:26:59.178 INFO [http-nio-8080-exec-1] org.apache.catalina.core.ApplicationContext.log Manager: start: Starting web application '/'
