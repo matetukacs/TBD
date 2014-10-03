@@ -7,6 +7,7 @@
 package com.cisco.tbd.stec.client;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Timer;
 import java.util.TimerTask;
@@ -40,9 +41,22 @@ public class RuleRequester extends TimerTask {
             Logger.getLogger(RuleRequester.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-    
+    private int rule_counter = 200000;
+    private PrintWriter writer = new PrintWriter("__just_log.txt", "UTF-8");
+
+    public String create_requested_Snort_format(String in_ip)
+    {
+        //alert tcp any any -> any 12345 (msg:"12345 alert!!!"; sid:13400384;)
+        this.rule_counter++;
+        String res = "block tcp "+in_ip+" any -> any any (msg:\"Dynamic rule="+rule_counter+"\"; sid:"+rule_counter+";)";
+        writer.println("New generated:"  +res);
+        writer.flush();
+        return res;
+    }
     public void updateLocalRulesWith(JSONArray rules) {
-        //create rules in right format and append to right file. possible throgh a static method in fileutisl. there is example code as well. 
+        //create rules in right format and append to right file. possible throgh a static method in fileutisl. there is example code as well.
+        
+        
     }
 
 }

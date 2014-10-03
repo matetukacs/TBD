@@ -953,3 +953,118 @@ Caused by: java.lang.IllegalArgumentException: The main resource set specified [
   class com.cisco.hackit5.demo.stec3.HelloWorld
 02-Oct-2014 20:42:42.025 INFO [http-nio-8080-exec-7] com.sun.jersey.api.core.ScanningResourceConfig.init No provider classes found.
 02-Oct-2014 20:42:42.147 INFO [http-nio-8080-exec-7] com.sun.jersey.server.impl.application.WebApplicationImpl._initiate Initiating Jersey application, version 'Jersey: 1.13 06/29/2012 05:14 PM'
+02-Oct-2014 23:06:11.330 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version: Apache Tomcat/8.0.14
+02-Oct-2014 23:06:11.332 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:   Sep 24 2014 09:01:51
+02-Oct-2014 23:06:11.332 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:  8.0.14.0
+02-Oct-2014 23:06:11.332 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:        Mac OS X
+02-Oct-2014 23:06:11.332 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:     10.9.4
+02-Oct-2014 23:06:11.333 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:   x86_64
+02-Oct-2014 23:06:11.333 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:    1.7.0_67-b01
+02-Oct-2014 23:06:11.333 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:     Oracle Corporation
+02-Oct-2014 23:06:11.750 INFO [main] org.apache.catalina.core.AprLifecycleListener.init The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Applications/NetBeans/NetBeans 8.0.1.app/Contents/Resources/NetBeans/webcommon/bin::/Users/ttsatury/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+02-Oct-2014 23:06:12.178 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+02-Oct-2014 23:06:12.222 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+02-Oct-2014 23:06:12.226 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+02-Oct-2014 23:06:12.228 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+02-Oct-2014 23:06:12.229 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1051 ms
+02-Oct-2014 23:06:12.296 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+02-Oct-2014 23:06:12.296 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.14
+02-Oct-2014 23:06:12.307 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor /Users/ttsatury/Documents/HackIT/TBD/apache-tomcat-8.0.14/conf/Catalina/localhost/ROOT.xml
+02-Oct-2014 23:06:12.438 WARNING [localhost-startStop-1] org.apache.catalina.startup.SetContextPropertiesRule.begin [SetContextPropertiesRule]{Context} Setting property 'antiJARLocking' to 'true' did not find a matching property.
+02-Oct-2014 23:06:12.948 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor /Users/ttsatury/Documents/HackIT/TBD/apache-tomcat-8.0.14/conf/Catalina/localhost/ROOT.xml has finished in 640 ms
+02-Oct-2014 23:06:12.949 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor /Users/ttsatury/Documents/HackIT/TBD/apache-tomcat-8.0.14/conf/Catalina/localhost/Stec3.xml
+02-Oct-2014 23:06:12.953 WARNING [localhost-startStop-1] org.apache.catalina.startup.SetContextPropertiesRule.begin [SetContextPropertiesRule]{Context} Setting property 'antiJARLocking' to 'true' did not find a matching property.
+02-Oct-2014 23:06:13.578 INFO [localhost-startStop-1] com.sun.jersey.server.impl.container.servlet.JerseyServletContainerInitializer.addServletWithApplication Registering the Jersey servlet application, named org.netbeans.rest.application.config.ApplicationConfig, at the servlet mapping, /webresources/*, with the Application class of the same name
+02-Oct-2014 23:06:13.581 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor /Users/ttsatury/Documents/HackIT/TBD/apache-tomcat-8.0.14/conf/Catalina/localhost/Stec3.xml has finished in 633 ms
+02-Oct-2014 23:06:13.582 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/ttsatury/Documents/HackIT/TBD/apache-tomcat-8.0.14/webapps/docs
+02-Oct-2014 23:06:13.613 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/ttsatury/Documents/HackIT/TBD/apache-tomcat-8.0.14/webapps/docs has finished in 31 ms
+02-Oct-2014 23:06:13.613 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/ttsatury/Documents/HackIT/TBD/apache-tomcat-8.0.14/webapps/examples
+02-Oct-2014 23:06:14.112 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/ttsatury/Documents/HackIT/TBD/apache-tomcat-8.0.14/webapps/examples has finished in 499 ms
+02-Oct-2014 23:06:14.112 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/ttsatury/Documents/HackIT/TBD/apache-tomcat-8.0.14/webapps/host-manager
+02-Oct-2014 23:06:14.151 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/ttsatury/Documents/HackIT/TBD/apache-tomcat-8.0.14/webapps/host-manager has finished in 39 ms
+02-Oct-2014 23:06:14.152 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/ttsatury/Documents/HackIT/TBD/apache-tomcat-8.0.14/webapps/manager
+02-Oct-2014 23:06:14.181 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/ttsatury/Documents/HackIT/TBD/apache-tomcat-8.0.14/webapps/manager has finished in 28 ms
+02-Oct-2014 23:06:14.185 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+02-Oct-2014 23:06:14.195 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+02-Oct-2014 23:06:14.196 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1967 ms
+02-Oct-2014 23:06:15.050 INFO [http-nio-8080-exec-1] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/Stec3]
+02-Oct-2014 23:06:15.129 INFO [http-nio-8080-exec-4] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor /Users/ttsatury/Documents/HackIT/TBD/apache-tomcat-8.0.14/conf/Catalina/localhost/Stec3.xml
+02-Oct-2014 23:06:15.133 WARNING [http-nio-8080-exec-4] org.apache.catalina.startup.SetContextPropertiesRule.begin [SetContextPropertiesRule]{Context} Setting property 'antiJARLocking' to 'true' did not find a matching property.
+02-Oct-2014 23:06:15.541 INFO [http-nio-8080-exec-4] com.sun.jersey.server.impl.container.servlet.JerseyServletContainerInitializer.addServletWithApplication Registering the Jersey servlet application, named org.netbeans.rest.application.config.ApplicationConfig, at the servlet mapping, /webresources/*, with the Application class of the same name
+02-Oct-2014 23:06:15.544 INFO [http-nio-8080-exec-4] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor /Users/ttsatury/Documents/HackIT/TBD/apache-tomcat-8.0.14/conf/Catalina/localhost/Stec3.xml has finished in 416 ms
+02-Oct-2014 23:06:15.555 INFO [http-nio-8080-exec-7] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/Stec3]] after start() had already been called. The second call will be ignored.
+02-Oct-2014 23:07:06.488 INFO [http-nio-8080-exec-11] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/Stec3]
+02-Oct-2014 23:07:06.509 INFO [http-nio-8080-exec-15] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor /Users/ttsatury/Documents/HackIT/TBD/apache-tomcat-8.0.14/conf/Catalina/localhost/Stec3.xml
+02-Oct-2014 23:07:06.513 WARNING [http-nio-8080-exec-15] org.apache.catalina.startup.SetContextPropertiesRule.begin [SetContextPropertiesRule]{Context} Setting property 'antiJARLocking' to 'true' did not find a matching property.
+02-Oct-2014 23:07:06.859 INFO [http-nio-8080-exec-15] com.sun.jersey.server.impl.container.servlet.JerseyServletContainerInitializer.addServletWithApplication Registering the Jersey servlet application, named org.netbeans.rest.application.config.ApplicationConfig, at the servlet mapping, /webresources/*, with the Application class of the same name
+02-Oct-2014 23:07:06.862 INFO [http-nio-8080-exec-15] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor /Users/ttsatury/Documents/HackIT/TBD/apache-tomcat-8.0.14/conf/Catalina/localhost/Stec3.xml has finished in 353 ms
+02-Oct-2014 23:07:06.875 INFO [http-nio-8080-exec-13] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/Stec3]] after start() had already been called. The second call will be ignored.
+02-Oct-2014 23:07:54.745 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context []
+02-Oct-2014 23:07:54.752 INFO [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor /Users/ttsatury/Documents/HackIT/TBD/apache-tomcat-8.0.14/conf/Catalina/localhost/ROOT.xml
+02-Oct-2014 23:07:54.755 WARNING [localhost-startStop-2] org.apache.catalina.startup.SetContextPropertiesRule.begin [SetContextPropertiesRule]{Context} Setting property 'antiJARLocking' to 'true' did not find a matching property.
+02-Oct-2014 23:07:54.757 SEVERE [localhost-startStop-2] org.apache.catalina.core.ContainerBase.addChildInternal ContainerBase.addChild: start: 
+ org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:724)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:700)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:714)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:581)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1685)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [org.apache.catalina.webresources.StandardRoot@79681a61]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4900)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5029)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 10 more
+Caused by: java.lang.IllegalArgumentException: The main resource set specified [/Users/ttsatury/Documents/HackIT/TBD/Stec/target/Stec-1.0] is not valid
+	at org.apache.catalina.webresources.StandardRoot.startInternal(StandardRoot.java:665)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 13 more
+
+02-Oct-2014 23:07:54.759 SEVERE [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployDescriptor Error deploying configuration descriptor /Users/ttsatury/Documents/HackIT/TBD/apache-tomcat-8.0.14/conf/Catalina/localhost/ROOT.xml
+ java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[]]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:727)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:700)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:714)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:581)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1685)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+02-Oct-2014 23:07:54.759 INFO [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor /Users/ttsatury/Documents/HackIT/TBD/apache-tomcat-8.0.14/conf/Catalina/localhost/ROOT.xml has finished in 7 ms
+02-Oct-2014 23:07:56.938 INFO [http-nio-8080-exec-20] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/Stec3]
+02-Oct-2014 23:08:05.404 INFO [http-nio-8080-exec-13] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor /Users/ttsatury/Documents/HackIT/TBD/apache-tomcat-8.0.14/conf/Catalina/localhost/Stec3.xml
+02-Oct-2014 23:08:05.408 WARNING [http-nio-8080-exec-13] org.apache.catalina.startup.SetContextPropertiesRule.begin [SetContextPropertiesRule]{Context} Setting property 'antiJARLocking' to 'true' did not find a matching property.
+02-Oct-2014 23:08:05.698 INFO [http-nio-8080-exec-13] com.sun.jersey.server.impl.container.servlet.JerseyServletContainerInitializer.addServletWithApplication Registering the Jersey servlet application, named org.netbeans.rest.application.config.ApplicationConfig, at the servlet mapping, /webresources/*, with the Application class of the same name
+02-Oct-2014 23:08:05.701 INFO [http-nio-8080-exec-13] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor /Users/ttsatury/Documents/HackIT/TBD/apache-tomcat-8.0.14/conf/Catalina/localhost/Stec3.xml has finished in 296 ms
+02-Oct-2014 23:08:05.711 INFO [http-nio-8080-exec-15] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/Stec3]] after start() had already been called. The second call will be ignored.
+02-Oct-2014 23:28:51.021 INFO [http-nio-8080-exec-26] null.null Scanning for root resource and provider classes in the Web app resource paths:
+  /WEB-INF/lib
+  /WEB-INF/classes
+02-Oct-2014 23:28:51.215 INFO [http-nio-8080-exec-26] com.sun.jersey.api.core.ScanningResourceConfig.logClasses Root resource classes found:
+  class com.cisco.hackit5.demo.stec3.HelloWorld
+  class com.cisco.hackit5.demo.stec3.Threats
+02-Oct-2014 23:28:51.215 INFO [http-nio-8080-exec-26] com.sun.jersey.api.core.ScanningResourceConfig.init No provider classes found.
+02-Oct-2014 23:28:51.361 INFO [http-nio-8080-exec-26] com.sun.jersey.server.impl.application.WebApplicationImpl._initiate Initiating Jersey application, version 'Jersey: 1.13 06/29/2012 05:14 PM'
+02-Oct-2014 23:45:14.685 INFO [http-nio-8080-exec-27] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/Stec3]
+02-Oct-2014 23:45:14.705 INFO [http-nio-8080-exec-30] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor /Users/ttsatury/Documents/HackIT/TBD/apache-tomcat-8.0.14/conf/Catalina/localhost/Stec3.xml
+02-Oct-2014 23:45:14.708 WARNING [http-nio-8080-exec-30] org.apache.catalina.startup.SetContextPropertiesRule.begin [SetContextPropertiesRule]{Context} Setting property 'antiJARLocking' to 'true' did not find a matching property.
+02-Oct-2014 23:45:15.000 INFO [http-nio-8080-exec-30] com.sun.jersey.server.impl.container.servlet.JerseyServletContainerInitializer.addServletWithApplication Registering the Jersey servlet application, named org.netbeans.rest.application.config.ApplicationConfig, at the servlet mapping, /webresources/*, with the Application class of the same name
+02-Oct-2014 23:45:15.003 INFO [http-nio-8080-exec-30] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor /Users/ttsatury/Documents/HackIT/TBD/apache-tomcat-8.0.14/conf/Catalina/localhost/Stec3.xml has finished in 299 ms
+02-Oct-2014 23:45:15.015 INFO [http-nio-8080-exec-29] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/Stec3]] after start() had already been called. The second call will be ignored.
+02-Oct-2014 23:45:22.588 INFO [http-nio-8080-exec-32] null.null Scanning for root resource and provider classes in the Web app resource paths:
+  /WEB-INF/lib
+  /WEB-INF/classes
+02-Oct-2014 23:45:22.745 INFO [http-nio-8080-exec-32] com.sun.jersey.api.core.ScanningResourceConfig.logClasses Root resource classes found:
+  class com.cisco.hackit5.demo.stec3.Threats
+  class com.cisco.hackit5.demo.stec3.HelloWorld
+02-Oct-2014 23:45:22.745 INFO [http-nio-8080-exec-32] com.sun.jersey.api.core.ScanningResourceConfig.init No provider classes found.
+02-Oct-2014 23:45:22.846 INFO [http-nio-8080-exec-32] com.sun.jersey.server.impl.application.WebApplicationImpl._initiate Initiating Jersey application, version 'Jersey: 1.13 06/29/2012 05:14 PM'
