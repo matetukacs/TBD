@@ -6,8 +6,22 @@
 
 package com.cisco.tbd.stec.client;
 
-import java.io.File;
-import java.util.Scanner;
+import static com.cisco.tbd.stec.client.FileUtils.getLinesOfFile;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Timer;
+import org.apache.http.HttpResponse;
+import org.apache.http.client.ClientProtocolException;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.entity.StringEntity;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.codehaus.jettison.json.JSONException;
+import org.codehaus.jettison.json.JSONObject;
 
 /**
  *
@@ -15,7 +29,7 @@ import java.util.Scanner;
  */
 public class Runner {
 
-    public static String currentLastLine = "";
+    public static int lastLineCount = 0;
     public static void main(String[] args) throws Exception{
         
 //        if (args.length == 0) {
@@ -25,13 +39,30 @@ public class Runner {
 //        File file = new File(args[0]);
         
         
-        File file = new File("./../log.txt");
+        RuleRequester.runWithFrequency(5000);
         
-        Scanner scanner = new Scanner(file);
+        String filePath = "./../log.txt";
+        
+        
+        List<String> lines = getLinesOfFile(filePath);
+       
+        for (String line : lines) {
+            System.out.println(line);
+        }
         
         while (true) {
-            System.err.println(scanner.nextLine());
+            int currentLineCount = FileUtils.getFileLineCount(filePath);
+            
+            if (currentLineCount != lastLineCount) {
+                
+                System.out.println(FileUtils.getLastLineOfFile(filePath));
+                
+                lastLineCount = currentLineCount;
+            }
+            
+           
         }
         //System.err.println("Specify output folder in mtukuacs/output");
     }
+    
 }
