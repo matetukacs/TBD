@@ -20,6 +20,8 @@ import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.codehaus.jettison.json.JSONException;
 import org.codehaus.jettison.json.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
 
 /**
  *
@@ -86,15 +88,17 @@ public class ServerConnection {
 
     }
 
-    public static ArrayList<String> pullNewRules(String timeStamp) throws IOException {
+    public static ArrayList<String> pullNewRules(String timeStamp) throws IOException, ParseException, JSONException {
 
-        String request = "http://10.154.244.56/stec/get_threats.php";
+        String request = "http://10.154.244.56/stec/get_threats.php?token=weiuyrwerywiuery&exchange=1&from="+timeStamp;
 
         HttpClient client = new HttpClient();
 
         GetMethod method = new GetMethod(request);
 
-        //method.addRequestHeader("from", timeStamp);
+//        method.addRequestHeader("token", "weiuyrwerywiuery");
+//        method.addRequestHeader("exchange", "1");
+//        method.addRequestHeader("from", timeStamp);
 		// Send GET request
         int statusCode = client.executeMethod(method);
 
@@ -104,13 +108,17 @@ public class ServerConnection {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(rstream));
 
-        String line;
-
-        while ((line = br.readLine()) != null) {
-
-            System.out.println(line);
-
-        }
+//        String line;
+//
+//        while ((line = br.readLine()) != null) {
+//
+//            System.out.println(line);
+//
+//        }
+        
+        JSONObject json = (JSONObject)new JSONParser().parse(br.readLine());
+        System.out.println("timestmp=" + json.get("timestamp"));
+        //System.out.println("width=" + json.get("width"));
 
         br.close();
 //        HttpClient client = new DefaultHttpClient();
