@@ -45,12 +45,12 @@ public class Runner {
         
         String filePath = args[0];
         
-        
-        List<String> lines = getLinesOfFile(filePath);
-       
-        for (String line : lines) {
-            System.out.println(line);
-        }
+//        
+//        List<String> lines = getLinesOfFile(filePath);
+//       
+//        for (String line : lines) {
+//            ServerConnection.pushDetectedThreat(LogUtils.getAttackData(line));
+//        }
         
         while (true) {
             int currentLineCount = FileUtils.getFileLineCount(filePath);
